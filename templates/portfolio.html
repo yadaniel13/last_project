@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- portfolio -->
+<h1> Портфолио {{ user.name }}</h1>
+<div class="col-md6 border rounded">
+    <p>
+        <em style="font-weight: bold">{{ form.surname.label }}</em><br>
+        <em style="margin-left: 4%">{{ news.surname }}</em>
+    </p>
+    <p>
+        <em style="font-weight: bold">{{ form.name.label }}</em><br>
+        <em style="margin-left: 4%">{{ news.name}}</em>
+    </p>
+    <p>
+        <em style="font-weight: bold">{{ form.batya.label }}</em><br>
+        <em style="margin-left: 4%">{{ news.batya}}</em>
+    </p>
+    <p>
+        <em style="font-weight: bold">{{ form.content.label }}</em><br>
+        <em style="margin-left: 4%">{{ news.content}}</em>
+    </p>
+
+</div>
+
+<!-- COMMS -->
+
+{% endblock %}
